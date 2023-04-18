@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "54939419987",
+    "project_id": "vikalp-913f1",
+    "storage_bucket": "vikalp-913f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54939419987:android:81ffce1cf01934a2d80da6",
+        "android_client_info": {
+          "package_name": "com.example.vikalp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54939419987-82n2pumick53j1gvpifbhrot6131g7n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw8BkSg_Xl8AIGGEuXi47vrtZpIhmmBAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54939419987-82n2pumick53j1gvpifbhrot6131g7n3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "54939419987-15updojc1untduijj4ha4nefoa9vuafq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.vikalp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
