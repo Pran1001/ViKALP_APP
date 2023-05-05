@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,117 +12,189 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-            height: double.infinity,
-            width: double.infinity,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage("assets/images/homebg.jpg"),
-                  fit: BoxFit.cover),
-            ),
-            child: // Foreground widget here
-                Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                  SingleChildScrollView(
-                    child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 16, 0, 0),
-                            padding: EdgeInsets.all(0),
-                            width: MediaQuery.of(context).size.width,
-                            height: 160,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              borderRadius: BorderRadius.zero,
-                            ),
-                            child: ListView(
-                              scrollDirection: Axis.horizontal,
-                              padding: EdgeInsets.all(0),
-                              shrinkWrap: true,
-                              physics: ClampingScrollPhysics(),
-                              children: [
-                                Container(
-                                  margin: EdgeInsets.fromLTRB(16, 0, 0, 0),
-                                  padding: EdgeInsets.all(8),
-                                  width: 250,
-                                  height: 100,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                        image: AssetImage(
-                                            "assets/images/home1.jpg"),
-                                        fit: BoxFit.cover),
-                                    color: Color(0xff000000),
-                                    shape: BoxShape.rectangle,
-                                    borderRadius: BorderRadius.circular(16.0),
-                                  ),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.fromLTRB(16, 0, 0, 0),
-                                  padding: EdgeInsets.all(8),
-                                  width: 250,
-                                  height: 100,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                        image: AssetImage(
-                                            "assets/images/home2.jpg"),
-                                        fit: BoxFit.cover),
-                                    color: Color(0xff000000),
-                                    shape: BoxShape.rectangle,
-                                    borderRadius: BorderRadius.circular(16.0),
-                                  ),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.fromLTRB(16, 0, 0, 0),
-                                  padding: EdgeInsets.all(8),
-                                  width: 250,
-                                  height: 100,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                        image: AssetImage(
-                                            "assets/images/home3.jpg"),
-                                        fit: BoxFit.cover),
-                                    color: Color(0xff000000),
-                                    shape: BoxShape.rectangle,
-                                    borderRadius: BorderRadius.circular(16.0),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          SingleChildScrollView(
-                            child: Column(children: [
-                              Container(
-                                margin: EdgeInsets.fromLTRB(16, 70, 16, 0),
-                                padding: EdgeInsets.all(8),
-                                width: double.infinity,
-                                height: 300,
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  shape: BoxShape.rectangle,
-                                  borderRadius: BorderRadius.circular(16.0),
-                                ),
-                                child: Text(
-                                  "The app is to guide your career path. \n\nAll you have to do is log in everything will be able on your dashboard including many blogs about different careers, personality test and many more. \n\nThis app will be the solution to all your queries and problems in your career. It would also help you provide relevant data as per your career related needs.",
-                                  textAlign: TextAlign.start,
-                                  overflow: TextOverflow.clip,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w400,
-                                    fontStyle: FontStyle.normal,
-                                    fontSize: 18,
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                  ),
-                                ),
-                              ),
-                            ]),
-                          ),
-                        ]),
+        body: SingleChildScrollView(
+            child: Column(children: [
+      Stack(children: [
+        Positioned.fill(
+          child: Image.asset(
+            "assets/images/homebg.jpg",
+            fit: BoxFit.cover,
+          ),
+        ),
+        Container(
+            padding: EdgeInsets.all(16),
+            child:
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              SizedBox(height: 16),
+              Text(
+                "Motivation on your Way...",
+                style: TextStyle(
+                  fontFamily: 'poppins',
+                  fontWeight: FontWeight.w400,
+                  fontStyle: FontStyle.normal,
+                  fontSize: 20,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(height: 16),
+              SizedBox(
+                height: 150,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    _buildCareerCard(
+                      "",
+                      "assets/images/quote1.png",
+                    ),
+                    _buildCareerCard(
+                      "",
+                      "assets/images/quote2.png",
+                    ),
+                    _buildCareerCard(
+                      "",
+                      "assets/images/quote3.png",
+                    ),
+                    _buildCareerCard(
+                      "",
+                      "assets/images/quote4.png",
+                    ),
+                    _buildCareerCard(
+                      "",
+                      "assets/images/quote5.png",
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 16),
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Text(
+                  "What ViKALP Offers...",
+                  style: TextStyle(
+                    fontFamily: 'poppins',
+                    fontWeight: FontWeight.w400,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20,
+                    color: Colors.white,
                   ),
-                ])));
+                ),
+                SizedBox(height: 16),
+                SizedBox(
+                    height: 200,
+                    child:
+                        ListView(scrollDirection: Axis.horizontal, children: [
+                      _buildCareerCard(
+                        "",
+                        "assets/images/uni.png",
+                      ),
+                      _buildCareerCard(
+                        "",
+                        "assets/images/career.png",
+                      ),
+                      _buildCareerCard(
+                        "",
+                        "assets/images/PTest.png",
+                      ),
+                      _buildCareerCard(
+                        "",
+                        "assets/images/chat.png",
+                      )
+                    ]))
+              ]),
+              SizedBox(height: 16),
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Text(
+                  "Connect to us easily through LinkedIn... ",
+                  style: TextStyle(
+                    fontFamily: 'poppins',
+                    fontWeight: FontWeight.w400,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(height: 16),
+                SizedBox(
+                    height: 200,
+                    child:
+                        ListView(scrollDirection: Axis.horizontal, children: [
+                      GestureDetector(
+                        onTap: () {
+                          _launchUrl(
+                              "https://www.linkedin.com/in/pranalidarekar/");
+                        },
+                        child: _buildCareerCard(
+                          "",
+                          "assets/images/pranali.jpg",
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          _launchUrl(
+                              "https://www.linkedin.com/in/vaishnavilalage/");
+                        },
+                        child: _buildCareerCard(
+                          "",
+                          "assets/images/vaish.jpg",
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          _launchUrl(
+                              "https://www.linkedin.com/in/manali-surve-7805a4228/");
+                        },
+                        child: _buildCareerCard(
+                          "",
+                          "assets/images/manali.jpg",
+                        ),
+                      )
+                    ]))
+              ])
+            ]))
+      ])
+    ])));
+  }
+}
+
+Widget _buildCareerCard(String title, String image) {
+  return Container(
+      margin: EdgeInsets.only(right: 16),
+      width: 200,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 10,
+            offset: Offset(0, 5),
+          ),
+        ],
+      ),
+      child: Stack(
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(16),
+            child: Image.asset(
+              image,
+              fit: BoxFit.cover,
+              width: double.infinity,
+              height: double.infinity,
+            ),
+          ),
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+              ),
+            ),
+          )
+        ],
+      ));
+}
+
+void _launchUrl(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }

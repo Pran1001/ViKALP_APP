@@ -650,7 +650,7 @@ class _QuizPageState extends State<QuizPage> {
         extraversionScore == agreeablenessScore &&
         agreeablenessScore == neuroticismScore) {
       return Align(
-          alignment: Alignment.topRight,
+          alignment: Alignment.center,
           child: Text(
             "Test came out neutral you can choose any of the careers",
             style: TextStyle(
@@ -827,8 +827,8 @@ class _QuizPageState extends State<QuizPage> {
       Padding(
         padding: EdgeInsets.fromLTRB(20, 30, 20, 0),
         child: Container(
-          width: 300,
-          height: 300,
+          height: MediaQuery.of(context).size.height * 0.2,
+          width: MediaQuery.of(context).size.width,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/images/test_image.png'),
@@ -850,7 +850,9 @@ class _QuizPageState extends State<QuizPage> {
                   fontSize: 16,
                   color: Color(0xff000000),
                 ),
-              ))),
+              )
+          )
+      ),
       Padding(
         padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
         child: const Divider(
@@ -919,7 +921,7 @@ class _QuizPageState extends State<QuizPage> {
     // Calculate and display the Big Five personality trait scores here
 
     return Padding(
-      padding: EdgeInsets.fromLTRB(0, 30, 15, 0),
+      padding: EdgeInsets.fromLTRB(15, 30, 15, 0),
       child: Column(
         children: [
           Text(

@@ -59,74 +59,12 @@ class _CareerState extends State<Career> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffffff),
+      backgroundColor: Color(0xffe8dbb5),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         children: [
-          Container(
-            margin: EdgeInsets.all(0),
-            padding: EdgeInsets.all(0),
-            child: Padding(
-              padding: EdgeInsets.fromLTRB(16, 0, 16, 16),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-                    child: TextField(
-                      controller: TextEditingController(),
-                      obscureText: false,
-                      textAlign: TextAlign.start,
-                      maxLines: 1,
-                      style: TextStyle(
-                        fontFamily: 'poppins',
-                        fontWeight: FontWeight.w400,
-                        fontStyle: FontStyle.normal,
-                        fontSize: 14,
-                        color: Color.fromARGB(255, 255, 255, 255),
-                      ),
-                      decoration: InputDecoration(
-                        disabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(4.0),
-                          borderSide:
-                              BorderSide(color: Color(0xff000000), width: 1),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(4.0),
-                          borderSide:
-                              BorderSide(color: Color(0xff000000), width: 1),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(4.0),
-                          borderSide:
-                              BorderSide(color: Color(0xff000000), width: 1),
-                        ),
-                        hintText: "Search by name",
-                        hintStyle: TextStyle(
-                          fontFamily: 'poppins',
-                          fontWeight: FontWeight.w400,
-                          fontStyle: FontStyle.normal,
-                          fontSize: 14,
-                          color: Color(0xff939393),
-                        ),
-                        filled: true,
-                        fillColor: Color(0xff000000),
-                        isDense: true,
-                        contentPadding:
-                            EdgeInsets.symmetric(vertical: 8, horizontal: 12),
-                        prefixIcon: Icon(Icons.search,
-                            color: Color(0xff939393), size: 24),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
           Expanded(
             flex: 1,
             child: GridView(
@@ -138,19 +76,12 @@ class _CareerState extends State<Career> {
                 crossAxisCount: 2,
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 0,
-                childAspectRatio: 0.55,
+                childAspectRatio: 0.8,
               ),
               children: [
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -162,8 +93,8 @@ class _CareerState extends State<Career> {
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
                             image: AssetImage('assets/images/paint.png'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
                           ),
                         ],
@@ -208,13 +139,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -226,8 +150,8 @@ class _CareerState extends State<Career> {
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
                             image: AssetImage('assets/images/pen.png'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
                           ),
 
@@ -273,13 +197,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -291,8 +208,8 @@ class _CareerState extends State<Career> {
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
                             image: AssetImage('assets/images/musicians.png'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
                           ),
 
@@ -339,13 +256,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -358,8 +268,8 @@ class _CareerState extends State<Career> {
                           Image(
                             image: AssetImage(
                                 'assets/images/graphic-designer.png'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
                           ),
                         ],
@@ -405,13 +315,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -422,9 +325,9 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/entrepreneurship.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
                           ),
                         ],
@@ -469,13 +372,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -486,20 +382,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/mad-scientist.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -543,13 +429,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -560,20 +439,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/blueprint.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -617,13 +486,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -634,20 +496,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/clapboard.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -691,13 +543,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -708,20 +553,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/marketing.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -765,13 +600,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -782,20 +610,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/teacher.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -839,13 +657,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -856,20 +667,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/accountant.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -914,13 +715,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -931,20 +725,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/data-analyst.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -989,13 +773,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1006,20 +783,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/engineer.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1064,13 +831,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1081,20 +841,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/assistant.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1139,13 +889,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1156,20 +899,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/financial-advisor.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1214,13 +947,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1231,20 +957,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/lawbook.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1289,13 +1005,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1306,20 +1015,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/operation.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1364,13 +1063,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1381,20 +1073,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/project.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1439,13 +1121,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1456,20 +1131,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/quality-assurance.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1494,7 +1159,7 @@ class _CareerState extends State<Career> {
                                 child: Text(
                                   "Quality Assurance Specialist",
                                   textAlign: TextAlign.start,
-                                  maxLines: 1,
+                                  maxLines: 2,
                                   overflow: TextOverflow.clip,
                                   style: TextStyle(
                                     fontWeight: FontWeight.w700,
@@ -1514,13 +1179,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1531,20 +1189,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/developer.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1589,13 +1237,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1606,20 +1247,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/actor.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1664,13 +1295,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1681,20 +1305,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/advertising.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1739,13 +1353,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1756,20 +1363,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/planner.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1814,13 +1411,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1831,20 +1421,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/human-resources.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1889,13 +1469,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1906,20 +1479,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/marketing1.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -1964,13 +1527,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1981,20 +1537,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/politics.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2039,13 +1585,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2056,20 +1595,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/public-relation.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2114,13 +1643,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2131,20 +1653,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/real-estate.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2189,13 +1701,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2206,20 +1711,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/sales-agent.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2264,13 +1759,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2281,20 +1769,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/host.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2339,13 +1817,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2356,20 +1827,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/community.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2414,13 +1875,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2431,20 +1885,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/consulting.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2489,13 +1933,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2506,20 +1943,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/humanitarian.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2564,13 +1991,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2581,20 +2001,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/mediator.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2639,13 +2049,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2656,20 +2059,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/nurse.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2714,13 +2107,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2731,20 +2117,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/social-worker.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2789,13 +2165,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2806,20 +2175,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/speech-therapist.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2864,13 +2223,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2881,20 +2233,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/teacher.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -2938,13 +2280,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -2955,20 +2290,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/veterinarian.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -3013,13 +2338,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -3030,20 +2348,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/archivist.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -3088,13 +2396,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -3105,20 +2406,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/auditor.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -3162,13 +2453,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -3179,20 +2463,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/cyber-security.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -3237,13 +2511,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -3254,20 +2521,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/editor.png'),
+
+
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -3311,13 +2568,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -3328,20 +2578,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/librarian.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -3386,13 +2626,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -3403,20 +2636,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/research.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -3461,13 +2684,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -3478,20 +2694,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/statistics.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -3536,13 +2742,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -3553,20 +2752,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/writing.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),
@@ -3611,13 +2800,6 @@ class _CareerState extends State<Career> {
                 Container(
                   margin: EdgeInsets.all(0),
                   padding: EdgeInsets.all(0),
-                  width: 200,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.zero,
-                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -3628,20 +2810,10 @@ class _CareerState extends State<Career> {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: AssetImage('assets/images/career.jpg'),
-                            height: MediaQuery.of(context).size.height * 0.2,
-                            width: MediaQuery.of(context).size.width,
+                            image: AssetImage('assets/images/languages.png'),
+                            //height: MediaQuery.of(context).size.height * 0.2,
+                            //width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                            padding: EdgeInsets.all(6),
-                            decoration: BoxDecoration(
-                              color: Color(0xffa0a0a0),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
-                            ),
                           ),
                         ],
                       ),

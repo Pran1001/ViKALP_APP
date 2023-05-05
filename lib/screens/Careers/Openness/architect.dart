@@ -4,13 +4,38 @@ class ArchitectRoadmap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffece0bc),
       appBar: AppBar(
-        title: Text('Architect Roadmap'),
-      backgroundColor: Color(0xff380955),
-),
-body: Center(
-child: _buildTree(),
-),
+          elevation: 4,
+          centerTitle: false,
+          automaticallyImplyLeading: false,
+          backgroundColor: Color(0xff380955),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.zero,
+          ),
+          title: Text(
+            "Architect Roadmap",
+            style: TextStyle(
+              fontFamily: 'poppins',
+              fontWeight: FontWeight.w400,
+              fontStyle: FontStyle.normal,
+              fontSize: 20,
+              color: Color(0xffffffff),
+            ),
+          ),
+          leading: Builder(
+            builder: (BuildContext context) {
+              return IconButton(
+                icon: const Icon(Icons.arrow_back_ios_new_sharp),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              );
+            },
+          )),
+      body: Center(
+        child: _buildTree(),
+      ),
     );
   }
 
@@ -19,6 +44,18 @@ child: _buildTree(),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              ///***If you have exported images you must have to copy those images in assets/images directory.
+              Image(
+                image: AssetImage('assets/images/blueprint.png'),
+                height: 400,
+                width: 300,
+                fit: BoxFit.contain,
+              ),
+            ],
+          ),
           _buildTreeNode(
             'Education',
             [
@@ -140,8 +177,7 @@ child: _buildTree(),
                 'Consider Career Paths',
                 [
                   _buildTreeNode(
-                    'Explore career opportunities in architecture firms'
-       ,[]),
+                      'Explore career opportunities in architecture firms', []),
                 ],
               ),
             ],

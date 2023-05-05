@@ -75,7 +75,7 @@ class _CollegeState extends State<College> {
                           borderSide:
                               BorderSide(color: Color(0xff000000), width: 1),
                         ),
-                        hintText: "Search by name",
+                        hintText: "Name",
                         hintStyle: TextStyle(
                           fontFamily: 'poppins',
                           fontWeight: FontWeight.w400,
@@ -128,7 +128,7 @@ class _CollegeState extends State<College> {
                           borderSide:
                               BorderSide(color: Color(0xff000000), width: 1),
                         ),
-                        hintText: "Search by country",
+                        hintText: "Country",
                         hintStyle: TextStyle(
                           fontFamily: 'poppins',
                           fontWeight: FontWeight.w400,
@@ -156,7 +156,7 @@ class _CollegeState extends State<College> {
                   : universities == null
                       ? const Center(child: CircularProgressIndicator())
                       : ListView(
-                          padding: const EdgeInsets.only(top: 20),
+                          padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                           children: universities!.map((University university) {
                             return Card(
                               child: Column(

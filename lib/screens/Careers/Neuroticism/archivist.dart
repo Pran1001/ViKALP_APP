@@ -4,10 +4,35 @@ class ArchivistRoadmap extends StatelessWidget {
 @override
 Widget build(BuildContext context) {
 return Scaffold(
-appBar: AppBar(
-title: Text('Archivist Roadmap'),
-backgroundColor: Color(0xff380955),
-),
+  backgroundColor: Color(0xffece0bc),
+  appBar: AppBar(
+      elevation: 4,
+      centerTitle: false,
+      automaticallyImplyLeading: false,
+      backgroundColor: Color(0xff380955),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.zero,
+      ),
+      title: Text(
+        "Archivist Roadmap",
+        style: TextStyle(
+          fontFamily: 'poppins',
+          fontWeight: FontWeight.w400,
+          fontStyle: FontStyle.normal,
+          fontSize: 20,
+          color: Color(0xffffffff),
+        ),
+      ),
+      leading: Builder(
+        builder: (BuildContext context) {
+          return IconButton(
+            icon: const Icon(Icons.arrow_back_ios_new_sharp),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          );
+        },
+      )),
 body: Center(
 child: _buildTree(),
 ),
@@ -19,6 +44,19 @@ return SingleChildScrollView(
 child: Column(
 crossAxisAlignment: CrossAxisAlignment.stretch,
 children: [
+  Stack(
+    alignment: Alignment.center,
+    children: [
+      ///***If you have exported images you must have to copy those images in assets/images directory.
+      Image(
+        image: AssetImage('assets/images/archivist.png'),
+        height:400,
+        width: 300,
+        fit: BoxFit.contain,
+      ),
+
+    ],
+  ),
 _buildTreeNode(
 'Education and Training',
 [
